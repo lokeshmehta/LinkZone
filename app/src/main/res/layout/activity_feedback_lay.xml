@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/ParentLog"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary">
+
+
+        <com.linkzone.linkzoneapp.widget.MyBoldTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:textSize="21sp"
+            android:text="Feedback"/>
+
+        <ImageView
+            android:id="@+id/LeftArrow"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/arrow"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:focusableInTouchMode="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.linkzone.linkzoneapp.widget.MyBoldTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="50dp"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:text="@string/FeedbackText"/>
+
+        <RelativeLayout
+            android:id="@+id/EditLa"
+            android:layout_margin="10dp"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/outline">
+
+            <com.linkzone.linkzoneapp.widget.MyEditText
+                android:inputType="textMultiLine"
+                android:gravity="top"
+                android:padding="10dp"
+                android:id="@+id/EditSubmit"
+                android:hint="Type Here........"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/noutline"/>
+
+        </RelativeLayout>
+
+        <com.linkzone.linkzoneapp.widget.RippleView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="@color/colorPrimary"
+            app:rv_centered="false"
+            android:id="@+id/SubmitFeed"
+            app:rv_color="@color/white"
+            app:rv_rippleDuration="200"
+            app:rv_zoom="true"
+            android:layout_below="@+id/EditLa">
+
+
+            <com.linkzone.linkzoneapp.widget.MyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="SUBMIT"
+                android:textColor="@color/white"/>
+
+        </com.linkzone.linkzoneapp.widget.RippleView>
+    </RelativeLayout>
+
+
+</LinearLayout>

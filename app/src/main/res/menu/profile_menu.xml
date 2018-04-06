@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context=".MainActivity">
+    <item
+        android:id="@+id/ChangePass"
+        android:title="Change Password"/>
+
+    <item android:id="@+id/UpdateAadhar"
+        android:title="Add Your Aadhar"/>
+
+    <item android:id="@+id/UploadImg"
+        android:title="Upload Image"/>
+
+    <item android:id="@+id/showGallery"
+        android:title="Show Gallery"/>
+
+</menu>

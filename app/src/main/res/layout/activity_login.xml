@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ParentLog"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary">
+
+        <com.linkzone.linkzoneapp.widget.MyBoldTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="LOG IN"
+            android:textColor="@color/White"
+            android:textSize="20sp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="3">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <com.linkzone.linkzoneapp.widget.MyBoldTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="40dp"
+                android:id="@+id/MainTxt"
+                android:text="LinkZone"
+                android:layout_centerInParent="true"
+                android:textColor="@color/colorPrimary"/>
+
+            <com.linkzone.linkzoneapp.widget.MyBoldTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/MainTxt"
+                android:layout_marginTop="5dp"
+                android:textSize="20dp"
+                android:textColor="@color/colorPrimary"
+                android:text="Grow Your Network"
+                android:layout_centerInParent="true"/>
+
+            <ImageView
+                android:id="@+id/SocialVisi"
+                android:visibility="invisible"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_margin="10dp"
+                android:tint="@color/colorPrimary"
+                android:src="@drawable/crosss"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:background="#e6e6e6"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <RelativeLayout
+                    android:id="@+id/GotoLogin"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <com.linkzone.linkzoneapp.widget.MyTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="LOG IN"
+                        android:textSize="16sp"/>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#8c8c8c"/>
+
+                <RelativeLayout
+                    android:id="@+id/GotoSignUp"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <com.linkzone.linkzoneapp.widget.MyTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="SIGN UP"
+                        android:textSize="16sp"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <com.github.aakira.expandablelayout.ExpandableLinearLayout
+                android:id="@+id/CollapseSocial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:ael_duration="300"
+                app:ael_expanded="true"
+                app:ael_interpolator="linear">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <RelativeLayout
+                        android:id="@+id/FbLogin"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+                        android:background="#3b5998">
+
+                        <com.facebook.login.widget.LoginButton
+                            android:layout_width="5dp"
+                            android:id="@+id/FB"
+                            android:background="#3b5998"
+                            android:layout_centerInParent="true"
+                            android:layout_height="20dp"/>
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="15dp"
+                            android:src="@drawable/facebookico"/>
+
+                        <com.linkzone.linkzoneapp.widget.MyTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="Connect with Facebook"
+                            android:textColor="@color/White"
+                            android:textSize="16sp"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/GotoGoogle"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/bordergoogle">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="15dp"
+                            android:src="@drawable/gogico"/>
+
+                        <com.linkzone.linkzoneapp.widget.MyTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="Connect with Google"
+                            android:textSize="16sp"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/GotoLinked"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+                        android:background="#0077B5">
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="20dp"
+                            android:src="@drawable/linkedincon"/>
+
+                        <com.linkzone.linkzoneapp.widget.MyTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="Connect with Linkedin"
+                            android:textColor="@color/White"
+                            android:textSize="16sp"/>
+
+                    </RelativeLayout>
+
+                    <com.linkzone.linkzoneapp.widget.MyTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Don't worry, we won't post anything on your bhalf"/>
+
+                </LinearLayout>
+
+            </com.github.aakira.expandablelayout.ExpandableLinearLayout>
+
+            <com.github.aakira.expandablelayout.ExpandableLinearLayout
+                android:id="@+id/ExapndLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:ael_duration="300"
+                app:ael_expanded="false"
+                app:ael_interpolator="linear">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:focusableInTouchMode="true"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_marginRight="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+
+                        <com.linkzone.linkzoneapp.widget.MyEditText
+                            android:id="@+id/EmailUserName"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="@drawable/blankoutline"
+                            android:hint="User Name"
+                            android:textColor="@color/Black"
+                            android:textColorHint="@color/Black"
+                            android:inputType="textEmailAddress"
+                            android:paddingLeft="35dp"
+                            android:textSize="15dp"/>
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_centerVertical="true"
+                            android:tint="@color/colorPrimary"
+                            android:src="@drawable/ic_person_black_36dp"/>
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@color/Black"/>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="15dp">
+
+
+                        <com.linkzone.linkzoneapp.widget.MyEditText
+                            android:id="@+id/EmailUserPass"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:background="@drawable/blankoutline"
+                            android:hint="Password"
+                            android:textColor="@color/Black"
+                            android:textColorHint="@color/Black"
+                            android:inputType="textPassword"
+                            android:paddingLeft="40dp"
+                            android:textSize="15dp"/>
+
+                        <ImageView
+                            android:id="@+id/showPass"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/ic_visibility_black_36dp"/>
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_centerVertical="true"
+                            android:tint="@color/colorPrimary"
+                            android:src="@drawable/ic_lock_black_36dp"/>
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@color/Black"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="10dp">
+
+                        <com.linkzone.linkzoneapp.widget.MyCheckBox
+                            android:id="@+id/rememberMe"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:buttonTint="@color/colorPrimary"
+                            android:checked="true"
+                            android:text="Remember Me"
+                            android:textColor="@color/Black"/>
+
+                        <com.linkzone.linkzoneapp.widget.MyTextView
+                            android:id="@+id/forgot"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:clickable="true"
+                            android:text="Forgot Password"
+                            android:textColor="@color/Black"/>
+
+                    </RelativeLayout>
+
+                    <com.linkzone.linkzoneapp.widget.RippleView
+                        android:id="@+id/EmailLogin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="20dp"
+                        app:rv_centered="true"
+                        app:rv_zoom="true"
+                        app:rv_rippleDuration="200">
+
+                        <com.linkzone.linkzoneapp.widget.MyButton
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:background="@color/colorPrimary"
+                            android:text="Sign In"
+                            android:textColor="#ffffff"
+                            android:textSize="15dp"/>
+                    </com.linkzone.linkzoneapp.widget.RippleView>
+
+
+                </LinearLayout>
+
+            </com.github.aakira.expandablelayout.ExpandableLinearLayout>
+
+            <com.github.aakira.expandablelayout.ExpandableLinearLayout
+                android:id="@+id/ExapndSignup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:ael_duration="300"
+                app:ael_expanded="false"
+                app:ael_interpolator="linear">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_marginRight="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:padding="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_gravity="center"
+                                android:tint="@color/colorPrimary"
+                                android:src="@drawable/ic_email_black_36dp"/>
+
+                            <com.linkzone.linkzoneapp.widget.MyEditText
+                                android:id="@+id/SignUpemail"
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:background="@drawable/blankoutline"
+                                android:layout_marginLeft="15dp"
+                                android:hint="Email Address"
+                                android:inputType="textEmailAddress"
+                                android:letterSpacing="0.1"
+                                android:textColor="@color/Black"
+                                android:textColorHint="@color/Black"
+                                android:textSize="16dp"
+                                />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/Black">
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:padding="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_gravity="center"
+                                android:tint="@color/colorPrimary"
+                                android:src="@drawable/ic_person_black_36dp"/>
+
+                            <com.linkzone.linkzoneapp.widget.MyEditText
+                                android:id="@+id/SignUpName"
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:layout_marginLeft="15dp"
+                                android:hint="Name"
+                                android:background="@drawable/blankoutline"
+                                android:inputType="text"
+                                android:letterSpacing="0.1"
+                                android:textColor="@color/Black"
+                                android:textColorHint="@color/Black"
+                                android:textSize="16dp"
+                                />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/Black"></LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="5dp">
+
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_gravity="center"
+                                android:tint="@color/colorPrimary"
+                                android:src="@drawable/ic_lock_black_36dp"/>
+
+
+                            <com.linkzone.linkzoneapp.widget.MyEditText
+                                android:id="@+id/SignUpPass"
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:layout_marginLeft="15dp"
+                                android:hint="Password"
+                                android:inputType="textPassword"
+                                android:background="@drawable/blankoutline"
+                                android:letterSpacing="0.1"
+                                android:textColor="@color/Black"
+                                android:textColorHint="@color/Black"
+                                android:textSize="16dp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/Black"></LinearLayout>
+
+                    </LinearLayout>
+
+                    <com.linkzone.linkzoneapp.widget.RippleView
+                        android:id="@+id/SignUpNow"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="20dp"
+                        app:rv_centered="true"
+                        app:rv_zoom="true"
+                        app:rv_rippleDuration="200">
+
+                        <com.linkzone.linkzoneapp.widget.MyButton
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:background="@color/colorPrimary"
+                            android:text="Sign UP"
+                            android:textColor="#ffffff"
+                            android:textSize="15dp"/>
+                    </com.linkzone.linkzoneapp.widget.RippleView>
+                </LinearLayout>
+
+            </com.github.aakira.expandablelayout.ExpandableLinearLayout>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

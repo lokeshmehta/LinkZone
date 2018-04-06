@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_forgot_password"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/forblankcircle" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/forbody">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <com.linkzone.linkzoneapp.widget.MyBoldTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Check You Email for OTP"
+                android:gravity="center"
+                android:layout_marginTop="10dp"/>
+
+            <com.linkzone.linkzoneapp.widget.MyEditText
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="number"
+                android:id="@+id/aadhartxt"
+                android:paddingLeft="10dp"
+                android:hint="Enter OTP"
+                android:background="@drawable/outline"/>
+
+
+            <com.linkzone.linkzoneapp.widget.RippleView
+                android:layout_width="100dp"
+                android:id="@+id/yes"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="40dp"
+                android:background="@color/colorPrimary"
+                app:rv_zoom="true"
+                app:rv_rippleDuration="200">
+
+                <com.linkzone.linkzoneapp.widget.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="16dp"
+                    android:layout_centerInParent="true"
+                    android:text="Submit"/>
+
+            </com.linkzone.linkzoneapp.widget.RippleView>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="66dp"
+        android:layout_height="3dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@color/White" />
+
+
+</RelativeLayout>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/topLin">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_margin="5dp"
+        android:elevation="5dp"
+        app:cardCornerRadius="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="40dp"
+                android:tint="@color/colorPrimary"
+                android:src="@drawable/ssbloc"
+                android:layout_alignParentRight="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2Km"
+                android:id="@+id/UDistance"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_alignParentRight="true"/>
+
+            <LinearLayout
+                android:id="@+id/Lay1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/ProfileDp"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        app:civ_border_color="#e7e7e7"
+                        app:civ_border_width="2dp"/>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/ProfileDp">
+                        
+                        <com.linkzone.linkzoneapp.widget.MyBoldTextView
+                            android:id="@+id/DPname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16dp"/>
+
+                        <com.linkzone.linkzoneapp.widget.MyTextView
+                            android:layout_below="@+id/DPname"
+                            android:id="@+id/Designation"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"/>
+
+                        <com.linkzone.linkzoneapp.widget.MyTextView
+                            android:layout_below="@+id/Designation"
+                            android:layout_width="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:id="@+id/Lives"
+                            android:layout_height="wrap_content"/>
+
+                        <com.linkzone.linkzoneapp.widget.MyTextView
+                            android:layout_below="@+id/Lives"
+                            android:layout_marginTop="4dp"
+                            android:id="@+id/UWorkAt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </RelativeLayout>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/LaySec"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true">
+
+
+                <ImageView
+                    android:id="@+id/DPMenu"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/crosss"
+                    android:tint="@color/colorPrimary"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/ic_addtofav"
+                        android:tint="@color/colorPrimary"/>
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/adduser"
+                        android:tint="@color/colorPrimary"/>
+
+                    <com.linkzone.linkzoneapp.widget.MyTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:id="@+id/SendRequest"
+                        android:gravity="center_vertical"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
+                        android:text="@string/Send_Request"/>
+
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

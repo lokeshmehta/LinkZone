@@ -1,0 +1,654 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:background="@color/colorPrimary">
+
+                    <ImageView
+                        android:id="@+id/CoverPic"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                </RelativeLayout>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/ProfileDp"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/dpplaceh"/>
+
+
+            </RelativeLayout>
+
+
+            <com.linkzone.linkzoneapp.widget.MyBoldTextView
+                android:layout_width="wrap_content"
+                android:id="@+id/HeadName"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:text="Ajit Tiwari"
+                android:textSize="18dp"/>
+
+
+            <com.linkzone.linkzoneapp.widget.MyTextView
+                android:layout_width="wrap_content"
+                android:id="@+id/HeadStatus"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="What a meaningless sense if loosing myself, though owing all of the world"/>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:background="#d9d9d9"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.linkzone.linkzoneapp.widget.RippleView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:rv_centered="true"
+                    android:id="@+id/AddFav"
+                    app:rv_color="@color/colorPrimary"
+                    app:rv_rippleDuration="200"
+                    app:rv_zoom="true">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/PLikes"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="15dp"
+                            android:src="@drawable/likee"
+                            android:tint="@color/colorPrimary"/>
+
+                        <com.linkzone.linkzoneapp.widget.MyBoldTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/PLikes"
+                            android:layout_centerHorizontal="true"
+                            android:id="@+id/Favtxt"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/AddFav"/>
+                    </RelativeLayout>
+
+
+                </com.linkzone.linkzoneapp.widget.RippleView>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#c1c1c1"/>
+
+                <com.linkzone.linkzoneapp.widget.RippleView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:rv_centered="true"
+                    android:id="@+id/SendFRequest"
+                    app:rv_color="@color/colorPrimary"
+                    app:rv_rippleDuration="200"
+                    app:rv_zoom="true">
+
+                    <ImageView
+                        android:id="@+id/Pcoment"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/adduser"
+                        android:tint="@color/colorPrimary"/>
+
+                    <com.linkzone.linkzoneapp.widget.MyBoldTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/Pcoment"
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/SendRqtText"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/Send_Request"/>
+
+
+                </com.linkzone.linkzoneapp.widget.RippleView>
+
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#d9d9d9"/>
+
+            <RelativeLayout
+                android:id="@+id/GotoExPDeatils"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <com.linkzone.linkzoneapp.widget.MyBoldTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="Personal Details"/>
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/ic_arrow_drop_down_black_36dp"
+                    android:tint="@color/colorPrimary"/>
+
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#d9d9d9"/>
+
+            <com.github.aakira.expandablelayout.ExpandableLinearLayout
+                android:id="@+id/ExapndProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:ael_duration="300"
+                app:ael_expanded="true"
+                app:ael_interpolator="linear">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:weightSum="2">
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".6">
+
+                            <com.linkzone.linkzoneapp.widget.MyBoldTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Email"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="20dp"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.4">
+
+                            <com.linkzone.linkzoneapp.widget.MyTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/UserEmail"
+                                android:layout_centerVertical="true"
+                                android:background="@drawable/blankoutline"
+                                android:text="ajit.xperiatech@gmail.com"/>
+
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_margin="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#bababa"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:weightSum="2">
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".6">
+
+                            <com.linkzone.linkzoneapp.widget.MyBoldTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Mobile"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="20dp"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.4">
+
+                            <com.linkzone.linkzoneapp.widget.MyTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:inputType="number"
+                                android:id="@+id/UserMob"
+                                android:layout_centerVertical="true"
+                                android:background="@drawable/blankoutline"
+                                android:text="8699440780"/>
+
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_margin="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#bababa"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:weightSum="2">
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".6">
+
+                            <com.linkzone.linkzoneapp.widget.MyBoldTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="DOB"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="20dp"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.4">
+
+                            <com.linkzone.linkzoneapp.widget.MyTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/UserDob"
+                                android:layout_centerVertical="true"
+                                android:background="@drawable/blankoutline"
+                                android:text="30/July/1992"/>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_margin="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#bababa"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:weightSum="2">
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".6">
+
+                            <com.linkzone.linkzoneapp.widget.MyBoldTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Interested in"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="20dp"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.4">
+
+                            <com.linkzone.linkzoneapp.widget.MyTextView
+                                android:layout_width="wrap_content"
+                                android:id="@+id/UserInte"
+                                android:layout_height="wrap_content"
+                                android:hint="Share what your interest"
+                                android:layout_centerVertical="true"/>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_margin="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#bababa"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:weightSum="2">
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".6">
+
+                            <com.linkzone.linkzoneapp.widget.MyBoldTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Lives in"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="20dp"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.4">
+
+                            <com.linkzone.linkzoneapp.widget.MyTextView
+                                android:layout_width="wrap_content"
+                                android:id="@+id/UserLives"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:text="New Delhi, India"/>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_margin="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#bababa"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:weightSum="2">
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".6">
+
+                            <com.linkzone.linkzoneapp.widget.MyBoldTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Working at"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="20dp"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.4">
+
+                            <com.linkzone.linkzoneapp.widget.MyTextView
+                                android:layout_width="wrap_content"
+                                android:id="@+id/UserWorkAt"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:text="Xperiatech Pvt Ltd"/>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_margin="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#bababa"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:weightSum="2">
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".6">
+
+                            <com.linkzone.linkzoneapp.widget.MyBoldTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Working as"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="20dp"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.4">
+
+                            <com.linkzone.linkzoneapp.widget.MyTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/UserWorkAs"
+                                android:layout_centerVertical="true"
+                                android:text="Android Developer"/>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                </com.github.aakira.expandablelayout.ExpandableLinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/GotoExEDetails"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <com.linkzone.linkzoneapp.widget.MyBoldTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="Education Details"/>
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/ic_arrow_drop_down_black_36dp"
+                    android:tint="@color/colorPrimary"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#d9d9d9"/>
+
+            <com.github.aakira.expandablelayout.ExpandableLinearLayout
+                android:id="@+id/ExapndEducation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:ael_duration="300"
+                app:ael_expanded="true"
+                app:ael_interpolator="linear">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:weightSum="2">
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".6">
+
+                            <com.linkzone.linkzoneapp.widget.MyBoldTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Post Graduation"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="20dp"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.4">
+
+                            <com.linkzone.linkzoneapp.widget.MyTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/UserPG"
+                                android:layout_centerVertical="true"
+                                android:text="Master in Computer Application"/>
+
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_margin="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#bababa"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:weightSum="2">
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".6">
+
+                            <com.linkzone.linkzoneapp.widget.MyBoldTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Graduation"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="20dp"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.4">
+
+                            <com.linkzone.linkzoneapp.widget.MyTextView
+                                android:layout_width="wrap_content"
+                                android:id="@+id/UserGrad"
+                                android:gravity="center"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:text="Bachelor in Computer Application"/>
+
+                        </RelativeLayout>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                </com.github.aakira.expandablelayout.ExpandableLinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/GotoExAlb"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <com.linkzone.linkzoneapp.widget.MyBoldTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="Albums"/>
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/ic_arrow_drop_down_black_36dp"
+                    android:tint="@color/colorPrimary"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#d9d9d9"/>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:id="@+id/SeeProImageRecycler">
+
+            </android.support.v7.widget.RecyclerView>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

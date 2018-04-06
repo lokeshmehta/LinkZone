@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/TextType"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/Outgoing"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical"
+        android:gravity="right">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/round_blue"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+
+            <com.linkzone.linkzoneapp.widget.MyTextView
+                android:id="@+id/ChatMsj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Do you need help with pricing ?"
+                android:textColor="#fff" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

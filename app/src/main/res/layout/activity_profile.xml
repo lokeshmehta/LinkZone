@@ -1,0 +1,825 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/ParentLog"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/coverIv"
+            android:scaleType="fitXY"/>
+
+        <com.linkzone.linkzoneapp.widget.RippleView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/UpdatePass"
+            android:layout_margin="5dp"
+            app:rv_zoom="true"
+            app:rv_rippleDuration="200"
+            app:rv_centered="true"
+            android:layout_alignParentRight="true">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_centerInParent="true"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_more_vert_white_36dp"/>
+
+        </com.linkzone.linkzoneapp.widget.RippleView>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ProfileDp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/dpplaceh"/>
+
+        <com.linkzone.linkzoneapp.widget.MyBoldTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ProfileDp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:id="@+id/ProfileDpName"
+            android:text="Ajit Tiwari"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:textColor="#ffffff"
+            android:textSize="18dp"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:focusableInTouchMode="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+          <LinearLayout
+              android:layout_marginTop="5dp"
+              android:layout_width="match_parent"
+              android:layout_height="45dp"
+              android:weightSum="2">
+
+              <RelativeLayout
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent"
+                  android:layout_weight=".6">
+
+                  <com.linkzone.linkzoneapp.widget.MyBoldTextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Name"
+                      android:layout_centerVertical="true"
+                      android:layout_marginLeft="20dp"/>
+
+              </RelativeLayout>
+
+              <RelativeLayout
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent"
+                  android:layout_weight="1.4">
+
+                  <com.linkzone.linkzoneapp.widget.MyEditText
+                      android:layout_width="wrap_content"
+                      android:inputType="textCapWords"
+                      android:id="@+id/UName"
+                      android:layout_height="wrap_content"
+                      android:layout_centerVertical="true"
+                      android:background="@drawable/blankoutline"
+                      android:text="Ajit Tiwari"/>
+
+              </RelativeLayout>
+          </LinearLayout>
+
+          <View
+              android:layout_margin="3dp"
+              android:layout_width="match_parent"
+              android:layout_height="1dp"
+              android:background="#bababa"/>
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="45dp"
+              android:weightSum="2">
+
+              <RelativeLayout
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent"
+                  android:layout_weight=".6">
+
+                  <com.linkzone.linkzoneapp.widget.MyBoldTextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Email"
+                      android:layout_centerVertical="true"
+                      android:layout_marginLeft="20dp"/>
+
+              </RelativeLayout>
+
+              <RelativeLayout
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent"
+                  android:layout_weight="1.4">
+
+                  <com.linkzone.linkzoneapp.widget.MyTextView
+                      android:layout_width="wrap_content"
+                      android:id="@+id/UEmail"
+                      android:layout_height="wrap_content"
+                      android:layout_centerVertical="true"
+                      android:background="@drawable/blankoutline"/>
+
+              </RelativeLayout>
+          </LinearLayout>
+
+          <View
+              android:layout_margin="3dp"
+              android:layout_width="match_parent"
+              android:layout_height="1dp"
+              android:background="#bababa"/>
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="45dp"
+              android:weightSum="2">
+
+              <RelativeLayout
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent"
+                  android:layout_weight=".6">
+
+                  <com.linkzone.linkzoneapp.widget.MyBoldTextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Mobile"
+                      android:layout_centerVertical="true"
+                      android:layout_marginLeft="20dp"/>
+
+              </RelativeLayout>
+
+              <RelativeLayout
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent"
+                  android:layout_weight="1.4">
+
+                  <com.linkzone.linkzoneapp.widget.MyEditText
+                      android:layout_width="200dp"
+                      android:layout_height="match_parent"
+                      android:inputType="number"
+                      android:id="@+id/UMob"
+                      android:hint="Enter Mobile"
+                      android:layout_centerVertical="true"
+                      android:background="@drawable/blankoutline" />
+
+                  <Switch
+                      android:id="@+id/SwitchMob"
+                      android:layout_width="wrap_content"
+                      android:layout_height="match_parent"
+                      android:layout_alignParentRight="true"
+                      android:layout_centerVertical="true"
+                      android:layout_marginRight="10dp"/>
+
+                  <TextView
+                      android:visibility="gone"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/SetMobText"/>
+
+              </RelativeLayout>
+          </LinearLayout>
+
+          <View
+              android:layout_margin="3dp"
+              android:layout_width="match_parent"
+              android:layout_height="1dp"
+              android:background="#bababa"/>
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="45dp"
+              android:weightSum="2">
+
+              <RelativeLayout
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent"
+                  android:layout_weight=".6">
+
+                  <com.linkzone.linkzoneapp.widget.MyBoldTextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="DOB"
+                      android:layout_centerVertical="true"
+                      android:layout_marginLeft="20dp"/>
+
+              </RelativeLayout>
+
+              <RelativeLayout
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent"
+                  android:layout_weight="1.4">
+
+                  <com.linkzone.linkzoneapp.widget.MyTextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/UDob"
+                      android:layout_centerVertical="true"
+                      android:background="@drawable/blankoutline"
+                      android:text="30/July/1992"/>
+
+              </RelativeLayout>
+
+          </LinearLayout>
+
+          <View
+              android:layout_margin="3dp"
+              android:layout_width="match_parent"
+              android:layout_height="1dp"
+              android:background="#bababa"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:weightSum="2">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".6">
+
+                    <com.linkzone.linkzoneapp.widget.MyBoldTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Gender"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.4"
+                    android:layout_marginRight="10dp">
+
+                    <com.linkzone.linkzoneapp.widget.MyTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/UMale"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/blankoutline"
+                        android:text="Male"/>
+
+                    <Switch
+                        android:id="@+id/SwitchGender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"/>
+
+                    <com.linkzone.linkzoneapp.widget.MyTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/UFemale"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/blankoutline"
+                        android:text="Female"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+          <!--*******************SIMPLE DETAILS*****************-->
+
+          <RelativeLayout
+              android:layout_width="match_parent"
+              android:layout_height="50dp"
+              android:background="@color/colorPrimary">
+
+              <com.linkzone.linkzoneapp.widget.MyBoldTextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_centerInParent="true"
+                  android:textSize="16dp"
+                  android:textColor="#FFFFFF"
+                  android:text="Tell People About Yourself"/>
+
+          </RelativeLayout>
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="45dp"
+              android:weightSum="2">
+
+              <RelativeLayout
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent"
+                  android:layout_weight=".6">
+
+                  <com.linkzone.linkzoneapp.widget.MyBoldTextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Status"
+                      android:layout_centerVertical="true"
+                      android:layout_marginLeft="20dp"/>
+
+              </RelativeLayout>
+
+              <RelativeLayout
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent"
+                  android:layout_weight="1.4">
+
+                  <com.linkzone.linkzoneapp.widget.MyEditText
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:inputType="textMultiLine"
+                      android:id="@+id/Ustatus"
+                      android:hint="Share something about you"
+                      android:layout_centerVertical="true"
+                      android:background="@drawable/blankoutline"/>
+
+              </RelativeLayout>
+
+          </LinearLayout>
+
+          <View
+              android:layout_margin="3dp"
+              android:layout_width="match_parent"
+              android:layout_height="1dp"
+              android:background="#bababa"/>
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="45dp"
+              android:weightSum="2">
+
+              <RelativeLayout
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent"
+                  android:layout_weight=".6">
+
+                  <com.linkzone.linkzoneapp.widget.MyBoldTextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Interested in"
+                      android:layout_centerVertical="true"
+                      android:layout_marginLeft="20dp"/>
+
+              </RelativeLayout>
+
+              <RelativeLayout
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent"
+                  android:layout_weight="1.4">
+
+                  <com.linkzone.linkzoneapp.widget.MyEditText
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:inputType="textMultiLine"
+                      android:id="@+id/UInterest"
+                      android:hint="Share what your interest"
+                      android:layout_centerVertical="true"
+                      android:background="@drawable/blankoutline"/>
+
+              </RelativeLayout>
+
+          </LinearLayout>
+
+          <View
+              android:layout_margin="3dp"
+              android:layout_width="match_parent"
+              android:layout_height="1dp"
+              android:background="#bababa"/>
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="45dp"
+              android:weightSum="2">
+
+              <RelativeLayout
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent"
+                  android:layout_weight=".6">
+
+                  <com.linkzone.linkzoneapp.widget.MyBoldTextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Lives in"
+                      android:layout_centerVertical="true"
+                      android:layout_marginLeft="20dp"/>
+
+              </RelativeLayout>
+
+              <RelativeLayout
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent"
+                  android:layout_weight="1.4">
+
+                  <com.linkzone.linkzoneapp.widget.MyEditText
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:id="@+id/ULives"
+                      android:inputType="textCapWords"
+                      android:layout_centerVertical="true"
+                      android:background="@drawable/blankoutline"
+                      android:hint="New Delhi"/>
+
+              </RelativeLayout>
+
+          </LinearLayout>
+
+          <View
+              android:layout_margin="3dp"
+              android:layout_width="match_parent"
+              android:layout_height="1dp"
+              android:background="#bababa"/>
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="45dp"
+              android:weightSum="2">
+
+              <RelativeLayout
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent"
+                  android:layout_weight=".6">
+
+                  <com.linkzone.linkzoneapp.widget.MyBoldTextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Working at"
+                      android:layout_centerVertical="true"
+                      android:layout_marginLeft="20dp"/>
+
+              </RelativeLayout>
+
+              <RelativeLayout
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent"
+                  android:layout_weight="1.4">
+
+                  <com.linkzone.linkzoneapp.widget.MyEditText
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:id="@+id/Uworkingat"
+                      android:inputType="textCapWords"
+                      android:layout_centerVertical="true"
+                      android:background="@drawable/blankoutline"
+                      android:hint="Xperiatech Pvt Ltd"/>
+
+              </RelativeLayout>
+
+          </LinearLayout>
+
+          <View
+              android:layout_margin="3dp"
+              android:layout_width="match_parent"
+              android:layout_height="1dp"
+              android:background="#bababa"/>
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="45dp"
+              android:weightSum="2">
+
+              <RelativeLayout
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent"
+                  android:layout_weight=".6">
+
+                  <com.linkzone.linkzoneapp.widget.MyBoldTextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Working as"
+                      android:layout_centerVertical="true"
+                      android:layout_marginLeft="20dp"/>
+
+              </RelativeLayout>
+
+              <RelativeLayout
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent"
+                  android:layout_weight="1.4">
+
+                  <com.linkzone.linkzoneapp.widget.MyEditText
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:layout_centerVertical="true"
+                      android:id="@+id/Uworkingas"
+                      android:inputType="textCapWords"
+                      android:background="@drawable/blankoutline"
+                      android:hint="Android Developer"/>
+
+              </RelativeLayout>
+
+          </LinearLayout>
+
+
+          <!--***************EDUCATIONAL DETAILS*******************-->
+
+          <RelativeLayout
+              android:layout_width="match_parent"
+              android:layout_height="50dp"
+              android:background="@color/colorPrimary">
+
+              <com.linkzone.linkzoneapp.widget.MyBoldTextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_centerInParent="true"
+                  android:textSize="16dp"
+                  android:textColor="#FFFFFF"
+                  android:text="Add Your Education Details"/>
+
+          </RelativeLayout>
+
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="45dp"
+              android:weightSum="2">
+
+              <RelativeLayout
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent"
+                  android:layout_weight=".6">
+
+                  <com.linkzone.linkzoneapp.widget.MyBoldTextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="High School"
+                      android:layout_centerVertical="true"
+                      android:layout_marginLeft="20dp"/>
+
+              </RelativeLayout>
+
+              <RelativeLayout
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent"
+                  android:layout_weight="1.4">
+
+                  <com.linkzone.linkzoneapp.widget.MyEditText
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/UHHC"
+                      android:inputType="textMultiLine|textCapWords"
+                      android:hint="Eg : Delhi Public School"
+                      android:layout_centerVertical="true"
+                      android:background="@drawable/blankoutline"/>
+
+              </RelativeLayout>
+
+          </LinearLayout>
+
+          <View
+              android:layout_margin="3dp"
+              android:layout_width="match_parent"
+              android:layout_height="1dp"
+              android:background="#bababa"/>
+
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="45dp"
+              android:weightSum="2">
+
+              <RelativeLayout
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent"
+                  android:layout_weight=".6">
+
+                  <com.linkzone.linkzoneapp.widget.MyBoldTextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Intermediate"
+                      android:layout_centerVertical="true"
+                      android:layout_marginLeft="20dp"/>
+
+              </RelativeLayout>
+
+              <RelativeLayout
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent"
+                  android:layout_weight="1.4">
+
+                  <com.linkzone.linkzoneapp.widget.MyEditText
+                      android:layout_width="wrap_content"
+                      android:id="@+id/USSC"
+                      android:layout_height="wrap_content"
+                      android:inputType="textMultiLine|textCapWords"
+                      android:hint="Eg : Delhi Public School"
+                      android:layout_centerVertical="true"
+                      android:background="@drawable/blankoutline"/>
+
+              </RelativeLayout>
+
+          </LinearLayout>
+
+          <View
+              android:layout_margin="3dp"
+              android:layout_width="match_parent"
+              android:layout_height="1dp"
+              android:background="#bababa"/>
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="45dp"
+              android:weightSum="2">
+
+              <RelativeLayout
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent"
+                  android:layout_weight=".6">
+
+                  <com.linkzone.linkzoneapp.widget.MyBoldTextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Graduation"
+                      android:layout_centerVertical="true"
+                      android:layout_marginLeft="20dp"/>
+
+              </RelativeLayout>
+
+              <RelativeLayout
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent"
+                  android:layout_weight="1.4">
+
+                  <com.linkzone.linkzoneapp.widget.MyEditText
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/UGraduation"
+                      android:inputType="textMultiLine|textCapWords"
+                      android:hint="Eg : Delhi University"
+                      android:layout_centerVertical="true"
+                      android:background="@drawable/blankoutline"/>
+
+              </RelativeLayout>
+
+          </LinearLayout>
+
+          <View
+              android:layout_margin="3dp"
+              android:layout_width="match_parent"
+              android:layout_height="1dp"
+              android:background="#bababa"/>
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="45dp"
+              android:weightSum="2">
+
+              <RelativeLayout
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent"
+                  android:layout_weight=".6">
+
+                  <com.linkzone.linkzoneapp.widget.MyBoldTextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Post Graduation"
+                      android:layout_centerVertical="true"
+                      android:layout_marginLeft="20dp"/>
+
+              </RelativeLayout>
+
+              <RelativeLayout
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent"
+                  android:layout_weight="1.4">
+
+                  <com.linkzone.linkzoneapp.widget.MyEditText
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:inputType="textMultiLine|textCapWords"
+                      android:id="@+id/UPGraduation"
+                      android:hint="Eg : Delhi University"
+                      android:layout_centerVertical="true"
+                      android:background="@drawable/blankoutline"/>
+
+              </RelativeLayout>
+
+          </LinearLayout>
+
+          <View
+              android:layout_margin="3dp"
+              android:layout_width="match_parent"
+              android:layout_height="1dp"
+              android:background="#bababa"/>
+
+          <!--***************SOCIAL DETAILS*******************-->
+
+          <RelativeLayout
+              android:layout_width="match_parent"
+              android:layout_height="50dp"
+              android:background="@color/colorPrimary">
+
+              <com.linkzone.linkzoneapp.widget.MyBoldTextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_centerInParent="true"
+                  android:textSize="16dp"
+                  android:textColor="#FFFFFF"
+                  android:text="Share Your Social Activities"/>
+
+          </RelativeLayout>
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="45dp"
+              android:weightSum="2">
+
+              <RelativeLayout
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent"
+                  android:layout_weight=".6">
+
+                  <com.linkzone.linkzoneapp.widget.MyBoldTextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Add Website"
+                      android:layout_centerVertical="true"
+                      android:layout_marginLeft="20dp"/>
+
+              </RelativeLayout>
+
+              <RelativeLayout
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent"
+                  android:layout_weight="1.4">
+
+                  <com.linkzone.linkzoneapp.widget.MyEditText
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:id="@+id/UWebsite"
+                      android:inputType="textCapWords"
+                      android:background="@drawable/blankoutline"
+                      android:hint="Xpertinfotech.com"
+                      android:layout_centerVertical="true"
+                      android:layout_alignParentLeft="true"
+                      android:layout_alignParentStart="true"/>
+
+              </RelativeLayout>
+
+          </LinearLayout>
+
+            <View
+                android:layout_margin="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#bababa"/>
+
+
+            <com.linkzone.linkzoneapp.widget.RippleView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="20dp"
+                app:rv_rippleDuration="200"
+                app:rv_zoom="true"
+                android:id="@+id/UpdateProfile">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorPrimary">
+
+                    <com.linkzone.linkzoneapp.widget.MyBoldTextView
+                        android:layout_width="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_height="wrap_content"
+                        android:text="Update Profile"
+                        android:textColor="@color/white"
+                        android:textSize="16dp"/>
+
+                </RelativeLayout>
+
+            </com.linkzone.linkzoneapp.widget.RippleView>
+
+
+
+      </LinearLayout>
+
+  </ScrollView>
+
+
+
+</LinearLayout>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#cccccc"
+    android:id="@+id/ParentLog"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha=".8"
+        android:src="@drawable/chat_background"
+        android:scaleType="fitXY"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000"
+        android:alpha="0.2"/>
+
+    <LinearLayout
+        android:id="@+id/Up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <LinearLayout
+                android:id="@+id/linear_profile"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/colorPrimary"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:id="@+id/ArrowBack"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/arrow"/>
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/ChatDp"
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/dpplaceh"/>
+
+
+
+
+                <com.linkzone.linkzoneapp.widget.MyBoldTextView
+                    android:id="@+id/ChatName"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ajit Tiwari"
+                    android:textColor="#fff"
+                    android:textSize="16sp"
+                    android:textStyle="bold"/>
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/popUpMenu"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_width="25dp"
+                android:layout_height="30dp"
+                android:tint="@color/white"
+                android:src="@drawable/ic_more_vert_white_36dp"/>
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/ChatRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/Down"
+        android:layout_below="@+id/Up">
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:id="@+id/Down"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.7"
+            android:background="@drawable/chatedit">
+
+            <com.linkzone.linkzoneapp.widget.MyEditText
+                android:id="@+id/TypeMessage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="20dp"
+                android:paddingRight="40dp"
+                android:background="@android:color/transparent"
+                android:hint="write a message"
+                android:minWidth="250dp"
+                android:textColorHint="#ced5db"/>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:tint="#cccccc"
+                android:id="@+id/PickImage"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_camera_white"/>
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".3">
+
+            <RelativeLayout
+                android:id="@+id/SendMessage"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:background="@drawable/fillcircle">
+
+
+                <ImageView
+                    android:id="@+id/attach"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/ic_send_white_36dp"
+                    android:tint="#d9d9d9"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

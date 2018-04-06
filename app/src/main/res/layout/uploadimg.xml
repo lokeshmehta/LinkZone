@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_forgot_password"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/forblankcircle" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/forbody"
+        android:layout_alignTop="@+id/view"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <com.linkzone.linkzoneapp.widget.MyBoldTextView
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="16dp"
+                android:gravity="center_horizontal"
+                android:text="Share your moments with others"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:weightSum="3"
+                android:layout_margin="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+               
+
+                <com.linkzone.linkzoneapp.widget.RippleView
+                    android:id="@+id/yes"
+                    app:rv_rippleDuration="200"
+                    android:layout_width="0dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight=".9"
+                    android:layout_height="40dp"
+                    app:rv_centered="true"
+                    app:rv_type="doubleRipple"
+                    app:rv_zoom="true">
+
+
+                    <com.linkzone.linkzoneapp.widget.MyButton
+                        android:layout_centerInParent="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/button_selector2"
+                        android:text="Profile Pic"
+                        android:textAllCaps="false"
+                        android:textColor="@color/White"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                </com.linkzone.linkzoneapp.widget.RippleView>
+
+                <com.linkzone.linkzoneapp.widget.RippleView
+                    android:id="@+id/CoverDp"
+                    app:rv_rippleDuration="200"
+                    android:layout_marginRight="5dp"
+                   android:layout_centerHorizontal="true"
+                    android:layout_width="0dp"
+                    android:layout_weight=".9"
+                    android:layout_height="40dp"
+                    app:rv_centered="true"
+                    app:rv_type="doubleRipple"
+                    app:rv_zoom="true">
+                    <com.linkzone.linkzoneapp.widget.MyButton
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/button_selector2"
+                        android:text="Cover Pic"
+                        android:textAllCaps="false"
+                        android:textColor="@color/White" />
+
+                </com.linkzone.linkzoneapp.widget.RippleView>
+
+                <com.linkzone.linkzoneapp.widget.RippleView
+                    app:rv_rippleDuration="200"
+                    android:id="@+id/no"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.2"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    app:rv_centered="true"
+                    app:rv_type="doubleRipple"
+                    app:rv_zoom="true">
+
+                    <com.linkzone.linkzoneapp.widget.MyButton
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/button_selector2"
+                        android:text="Share Pictures"
+                        android:textAllCaps="false"
+                        android:textColor="@color/White" />
+
+                </com.linkzone.linkzoneapp.widget.RippleView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="66dp"
+        android:layout_height="3dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@color/White"
+        android:id="@+id/view" />
+
+
+</RelativeLayout>

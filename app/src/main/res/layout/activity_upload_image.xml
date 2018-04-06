@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ParentLog"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentBottom="true">
+
+        <com.linkzone.linkzoneapp.widget.RippleView
+            android:layout_width="match_parent"
+            android:id="@+id/uploadImages"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:rv_rippleDuration="200"
+            app:rv_zoom="true"
+            app:rv_centered="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.linkzone.linkzoneapp.widget.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:layout_centerInParent="true"
+                    android:textSize="16dp"
+                    android:text="Choose Image"/>
+
+            </RelativeLayout>
+
+        </com.linkzone.linkzoneapp.widget.RippleView>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary">
+
+            <com.linkzone.linkzoneapp.widget.MyBoldTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="My Gallery"
+                android:textColor="@color/White"
+                android:textSize="21sp"
+                android:layout_centerInParent="true"/>
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/arrow"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

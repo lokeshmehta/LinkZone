@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <com.linkzone.linkzoneapp.widget.MyBoldTextView
+                android:layout_marginTop="10dp"
+                android:textSize="16dp"
+                android:gravity="center_horizontal"
+                android:text="Choose Your Option"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:weightSum="3"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+
+            <com.linkzone.linkzoneapp.widget.RippleView
+                android:layout_marginRight="2.5dp"
+                android:id="@+id/DeletePic"
+                app:rv_rippleDuration="200"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                app:rv_centered="true"
+                app:rv_zoom="true">
+
+                <com.linkzone.linkzone.widget.MyButton
+                    android:textAllCaps="false"
+                    android:textSize="16dp"
+                    android:layout_width="match_parent"
+                    android:background="@color/colorPrimary"
+                    android:layout_height="match_parent"
+                    android:text="Delete"
+                    android:textColor="@color/White" />
+            </com.linkzone.linkzoneapp.widget.RippleView>
+
+
+            <com.linkzone.linkzoneapp.widget.RippleView
+                android:layout_marginLeft="2.5dp"
+                app:rv_rippleDuration="200"
+                android:id="@+id/MakeProfilePic"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:rv_centered="true"
+                app:rv_zoom="true">
+
+                <com.linkzone.linkzone.widget.MyButton
+                    android:layout_width="match_parent"
+                    android:textSize="16dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorPrimary"
+                    android:text="Make Profile Picture"
+                    android:textAllCaps="false"
+                    android:textColor="@color/White"/>
+            </com.linkzone.linkzoneapp.widget.RippleView>
+
+            <com.linkzone.linkzoneapp.widget.RippleView
+                android:layout_marginLeft="2.5dp"
+                app:rv_rippleDuration="200"
+                android:id="@+id/MakeCoverPic"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:rv_centered="true"
+                app:rv_zoom="true">
+
+                <com.linkzone.linkzone.widget.MyButton
+                    android:layout_width="match_parent"
+                    android:textSize="16dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorPrimary"
+                    android:text="Make Cover Picture"
+                    android:textAllCaps="false"
+                    android:textColor="@color/White"/>
+            </com.linkzone.linkzoneapp.widget.RippleView>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

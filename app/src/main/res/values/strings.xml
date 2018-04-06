@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">LinkZone</string>
+
+    <string name="appbar_scrolling_view_behavior"></string>
+
+    <string name="facebook_app_id">495564740787998</string>
+    <string name="fb_login_protocol_scheme">fb495564740787998</string>
+
+    <string name="drawerOpen">Drawer Open</string>
+    <string name="drawerClose">Drawer Close</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="date_label_set">Press the button to set the date</string>
+    <string name="date_button_set">Set Date</string>
+    <string name="date_view_set">The Date is: </string>
+    <string name="date_selected"></string>
+
+    <string name="AddFav">Star</string>
+    <string name="Send_Request">Link Request</string>
+
+
+    <!--Navigation String-->
+    <string name="Profile">PROFILE</string>
+    <string name="Photo">PHOTO</string>
+    <string name="Message">MESSAGE</string>
+    <string name="Fav">FAVOURITE</string>
+    <string name="Feedback">FEEDBACK</string>
+    <string name="Logout">LOGOUT</string>
+    <string name="Notification">NOTIFICATION</string>
+
+
+    <string name="FeedbackText">Feel free to share your valuable feedback with us. We are thanking you in advance!!!</string>
+
+
+    <string name="in_news">Da Nang International Fireworks Festival 2017Update: Dec 08, 2016 (TITC) - Da Nang International Fireworks Festival 2017 (DIFF 2017) with the theme “Shining Marble Mountains” will take place for two months, from 29 April to 24 June 2017 with the aim to Da Nang become a unique cultural festival tourism space. </string>
+    >
+
+
+</resources>

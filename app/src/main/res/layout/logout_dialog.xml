@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_forgot_password"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/forblankcircle" />
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="6dp"
+            android:tint="@color/colorPrimary"
+            android:src="@drawable/fp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/forbody">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <com.linkzone.linkzoneapp.widget.MyBoldTextView
+                android:layout_marginTop="10dp"
+                android:textSize="16dp"
+                android:gravity="center_horizontal"
+                android:text="Are you sure to Logout ?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+               
+
+                <com.linkzone.linkzoneapp.widget.RippleView
+                    android:id="@+id/yes"
+                    android:layout_marginLeft="20dp"
+                    app:rv_rippleDuration="200"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    app:rv_centered="true"
+                    app:rv_type="doubleRipple"
+                    app:rv_zoom="true">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/button_selector2"
+                        android:text="Yes"
+                        android:textAllCaps="false"
+                        android:textColor="@color/White" />
+                </com.linkzone.linkzoneapp.widget.RippleView>
+
+                <com.linkzone.linkzoneapp.widget.RippleView
+                    app:rv_rippleDuration="200"
+                    android:layout_marginRight="20dp"
+                    android:id="@+id/no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    app:rv_centered="true"
+                    app:rv_type="doubleRipple"
+                    app:rv_zoom="true">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/button_selector2"
+                        android:text="No"
+                        android:textAllCaps="false"
+                        android:textColor="@color/White"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+                </com.linkzone.linkzoneapp.widget.RippleView>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="66dp"
+        android:layout_height="3dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@color/White" />
+
+
+</RelativeLayout>
